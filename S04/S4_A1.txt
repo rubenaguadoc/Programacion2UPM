@@ -1,0 +1,42 @@
+S3_A2
+
+1.- Se quiere diseñar e implementar un tipo abstracto de datos para manejar números complejos en notación polar. Atenderá a los siguientes requerimientos:
+
++ Nombre del TAD: Complejo
+- Estructura del TAD: Dos atributos reales de nombres "módulo" y "argumento"
+  para representar respectivamente, al módulo del vector en el plano complejo
+  y al ángulo que forma con el semieje de abscisas positivo.
++ Constructor.
++ Selectores para los atributos.
++ Visualizador
++ Operaciones:
+  + boolean esIgual (Complejo c)
+      POST: resultado es cierto si el objeto es igual a "c" y es falso e.o.c
+  + Complejo conjugado ()
+      POST: resultado es el complejo conjugado del objeto. El que tiene el
+      mismo módulo y argumento opuesto
+  + Complejo inverso ()
+      POST: resultado es el complejo inverso del objeto. El que tiene como
+      módulo el módulo inverso y el argumento opuesto.
+  + Complejo multiplicar (Complejo c)
+      POST: resultado es el complejo producto del objeto y "c": El que tiene
+      como modulo, el producto de los modulos y como argumento, la suma de los
+      argumentos.
+  + Complejo dividir (Complejo c)
+      POST: resultado es el complejo cociente del objeto y "c": El que tiene
+      como modulo, el cociente de los modulos y como argumento, la resta de los
+      argumentos.
+  + Complejo girar (double x)
+      POST: resultado es el complejo girado (en sentido contrario al de las
+      agujas del reloj) un angulo de "x" grados con respecto al objeto.
+  + Complejo potencia (int n)
+      POST: resultado es la potencia n_ésima del complejo objeto: el que tiene
+      como módulo la potencia n_ésima del módulo del objeto y como argumento
+      "n" veces el del objeto.
+  + Complejo raiz (int i, int n)
+      POST: resultado es la i_ésima solución de la raiz n_ésima del objeto: el
+      complejo que tiene como módulo la raiz n_ésima del módulo del objeto y
+      como argumento, (argumento+2*pi*i)/n.
+
+2.- Redactar en java un programa que calcule todas las raíces n_ésimas de un número complejo.
+

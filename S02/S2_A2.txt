@@ -1,0 +1,25 @@
+S2_A2
+
+
+Se quiere diseñar e implementar un tipo abstracto de datos para manejar cuadriláteros en el plano cartesiano. Para poder usar los algoritmos propios de esa geometría, determinaremos un cuadrilátero por los cuatro puntos del plano que conforman sus cuatro vértices. A tal efecto, se ha diseñado previamente el tipo abstracto de datos "Punto" como sigue:
+
+Punto
+  - double x, y;
+  + Punto (double abscisa, double ordenada)
+  + double getX ()
+  + double getY ()
+  + void setX (double abscisa)
+  + void setY (double ordenada)
+  + String toString ()
+  + boolean esIgual (Punto p)
+  + double distancia (Punto p)
+
+Se desea que el TAD "Cuadrilátero" contenga los siguientes servicios:
+
+1.- El cálculo del perímetro.
+2.- El cálculo del área.
+3.- La determinación del tipo de cuadrilátero (cuadrado, rectángulo, rombo, romboide, trapecio o trapezoide).
+
+Para facilitar la tarea se dispone de una plantilla con parte de la estructura de la clase Cuadrilatero y un "tester".
+
+

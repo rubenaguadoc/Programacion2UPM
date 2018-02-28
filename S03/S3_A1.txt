@@ -1,0 +1,21 @@
+S3_A1
+
+
+- Posici�n relativa de dos c�rculos en el plano.
+
+TAD C�rculo
+  // Constantes de posici�n relativa
+    + int DISJUNTAS = 1;
+    + int TANGENTES = 2;
+    + int SECANTES  = 3;
+  // Servicios DONE
+    + String toString ();           // Visualizador
+    + Punto getCentro ();           // Selector de centro
+    + double getRadio ();           // Selector de radio
+    + void setCentro (Punto p);     // Modificador de centro
+    + void setRadio (double r);     // Modificador de radio
+    + boolean esIgual (Circulo c);  // Comparador
+    + Circulo concentricoMitad ();  // Calcula el C�rculo conc�ntrico y mitad
+    + Circulo simetricoOrigen ();   // Calcula el C�rculo sim�trico al origen
+    + public int posicionRelativa (Circulo c);  // Determina la posici�n relativa
+  // Servicios TODO
