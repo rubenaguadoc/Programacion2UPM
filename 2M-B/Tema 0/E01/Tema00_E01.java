@@ -346,7 +346,7 @@ class Tema00_E01	{
 	  //System.out.println(SSssssssSSSsssSSSSSssssSSSSSSSsssSSSSuma);
 	  // Os pide numeros para sumar hasta que no escribais nada. 
 	  // Output: 231498 ,despues de haber anadido una hermosa cantidad de numeros
-	  // Y por cierto, eso de ahi arriba funciona cuando quiere ^^^
+	  // Para quepare de sumar, debes hacer Ctrl + D because Retraso_Mental = 1
 	  
 	  // Y finalmente, tobby es libre:
 	  
