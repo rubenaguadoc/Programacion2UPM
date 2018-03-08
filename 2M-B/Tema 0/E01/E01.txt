@@ -1,0 +1,36 @@
+/** 
+ * Tema00_E01 
+ * E/S estándar y manejo de ficheros.
+ * 
+ * @since <Fecha de hoy>    
+ * @version 1.0
+ * @author <Nombre del alumno aquí>
+ */
+Objetivos:
+	- Enfocar la atención y el esfuerzo en una cosa en cada momento.
+	- Probar y utilizar un elemento de programa (en este caso una operación) en cada momento. 
+	- Manejar la E/S de datos de la entrada estándar.
+	- Manejar la E/S de datos de ficheros.
+
+Material necesario: archivo Tema00_E01.java
+Material a entregar: archivo Tema00_E01.java
+
+Descripción del Problema
+
+En esta entrega se trata de que utilices unas operaciones que han sido
+desarrolladas previamente para que comprendas su utilidad y las documentes 
+de cara a terceras personas.
+
+Pautas
+
+Tienes que hacerlo OPERACIÓN A OPERACIÓN. Esto es muy importante: no pases a la siguiente operación hasta haber completado la actual. Si te lías mucho con la actual, déjala para el final y sigue con la siguiente.
+
+Sigue los siguientes pasos PARA CADA OPERACIÓN:
+
+1) Lectura: Lee la cabecera e implementación de la operación (EL CÓMO LO HACE) y quédate con una idea inicial de lo que hace.
+2) Experimentación: Utiliza la operación llamándola desde el main(), dejando sólo destapada esta llamada. Analiza los resultados que produce y contrasta con la realidad tu idea inicial. 
+3) Documentación: Describe LO QUE HACE LA OPERACIÓN mediante la especificación de la operación en el espacio indicado para ello.
+
+Deja en el main() todas las llamadas a las operaciones que te han servido para experimentar con ellas. 
+
+Tapa y destapa las frases y las llamadas en el main() que necesites para analizar cada operación.
