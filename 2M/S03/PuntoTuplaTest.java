@@ -9,7 +9,7 @@ public class PuntoTuplaTest
 {
 //  OPERACIONES PARTICULARES  ---------------------------------------
 /**
- * PRE: "p" est· creado
+ * PRE: "p" est√° creado
  * POST: resultado es "p" actualizado con los valores
  *       (abscisa,ordenada) para (x,y).
  */ 
