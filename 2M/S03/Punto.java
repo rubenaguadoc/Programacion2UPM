@@ -1,5 +1,5 @@
 /**
- * Especificación del TAD Punto<br>
+ * EspecificaciÃ³n del TAD Punto<br>
  * @since 19/02/2018
  * @version 1.0
  * @author JMB
@@ -34,7 +34,7 @@ public interface Punto
  */
   public boolean esIgual (Punto a);
 /**
- * POST: resultado es la distancia euclídea entre "p" y el objeto
+ * POST: resultado es la distancia euclÃ­dea entre "p" y el objeto
  */
   public double distancia (Punto p);
 }
