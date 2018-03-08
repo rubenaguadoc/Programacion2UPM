@@ -1,2 +1,6 @@
 # Programacion2UPM
-En este repo se irá subiendo el código solución de los ejercicios propuestos en clase (Grupo 2M de primero de carrera), y material adicional fruto de las clases de refuerzo que vaya dando.
+Repositorio de GitHub con las soluciones de los ejercicios y entregables propuestos en clase de Programacion II para los Grupos 2M y 2M-B. 
+
+Contacto: 
+Telegram: @rubenaguadoc
+Telegram: @PrinceKiwii
