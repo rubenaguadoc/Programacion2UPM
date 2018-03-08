@@ -1,0 +1,28 @@
+/** 
+ * Tema00_E02
+ * Operaciones de manejo de archivos de texto.
+ * 
+ * @since <Fecha de hoy>    
+ * @version 1.0
+ * @author <Nombre del alumno aquí>
+ */
+
+Material necesario: archivo Tema00_E02.java
+Material a entregar:  archivo Tema00_E02.java
+
+Descripción
+===========
+
+En esta entrega se trata de que estudies unas operaciones que han sido
+desarrolladas previamente y que las utilices como base para desarrollar otras que se te piden. 
+
+Pautas
+======
+
+Sigue los siguientes pasos:
+
+1. Comprende y utiliza primero las operaciones que se te dan, pasándoles diversas pruebas.
+
+2. Desarrolla, siguiendo los pasos habituales, las operaciones de las que sólo se te da su especificación.
+
+Trabaja siempre OPERACIÓN A OPERACIÓN, tapando y destapando.
