@@ -1,5 +1,5 @@
 /**
- * Implementación del TAD Punto<br>
+ * ImplementaciÃ³n del TAD Punto<br>
  * {@code Punto = (Entero x, y)}<br>
  * @since 19/2/2018
  * @version 1.0

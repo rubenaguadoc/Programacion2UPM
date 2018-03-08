@@ -1,5 +1,5 @@
 /**
- * Implementación del compuesto Punto<br>
+ * ImplementaciÃ³n del compuesto Punto<br>
  * {@code Punto = (Entero x, y)}<br>
  * @since 7/02/2017 > 13/2/17
  * @version 1.1
@@ -56,7 +56,7 @@ class Punto
   }
 /**
  * PRE: cierto
- * POST: resultado es la distancia euclídea entre "p" y el objeto
+ * POST: resultado es la distancia euclÃ­dea entre "p" y el objeto
  */
   public double distancia (Punto p)
   {
