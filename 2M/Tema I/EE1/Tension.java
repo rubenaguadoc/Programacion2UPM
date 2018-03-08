@@ -66,20 +66,20 @@ public class Tension {
 	
 	// Getters
 	
-		// Retrieves the private field 'baja'
-		public double baja() {
+	// Retrieves the private field 'baja'
+	public double baja() {
 			
-			return this.baja;
+		return this.baja;
 			
-		}
-		//----------------------------------------------------
+	}
+	//----------------------------------------------------
 		
-		// Retrieves the private field 'alta'
-		public double alta() {
+	// Retrieves the private field 'alta'
+	public double alta() {
 			
-			return this.alta;
-			
-		}
-		//----------------------------------------------------
+		return this.alta;
+		
+	}
+	//----------------------------------------------------
 	
 }
