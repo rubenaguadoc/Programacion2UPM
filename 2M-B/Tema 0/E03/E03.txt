@@ -1,0 +1,54 @@
+
+/** 
+ * Tema00_E03
+ * Ordenación de un fichero de números.
+ * 
+ * @since <Fecha de hoy>    
+ * @version 1.0
+ * @author <Nombre del alumno aquí>
+ */
+
+Material necesario: 
+	- Ord.java
+Material a entregar: 
+	- OrdTest.java 
+	- FicheroNumerosOrd.java 
+
+
+Descripción del Problema
+========================
+
+Se trata de desarrollar un programa que lea un fichero de números
+enteros y lo ordene. 
+
+El diseño del programa se da pautado.
+
+Pautas
+======
+
+1. Primero desarrollaremos una batería de pruebas de las operaciones de ordenación en el fichero OrdTest.java. Al ser operaciones de tipo procedimiento, las pruebas serán del tipo:
+
+	escribir(dato)  //dato antes
+	operacion(dato) //operación a probar 
+	escribir(dato)  //dato después
+
+Se facilitará el modelo de pruebas a seguir. 
+
+2. Después se desarrollará la operación de ordenación en el fichero FicheroNumerosOrd.java. Esta operación tiene la siguiente especificación y algoritmo:
+
+  /*
+   * ordenar (entrada, salida : String)
+   * EFECTO: Dado un archivo de números enteros <entrada> 
+   *         separados por espacios, genera un archivo <salida>
+   *         con los <n> primeros números de <entrada> ordenados 
+             crecientemente.
+   { 
+     numeros = leer(n, entrada) 
+     <<operacionOrdenacion>>(numeros) 
+     escribir(numeros, salida)
+   }
+   DONDE:
+     <<operacionOrdenacion>> será la operación de ordenación que se quiera 
+     usar de las que están en el archivo Ord.java
+   */ 
+Tema00_E03-enun.txt
