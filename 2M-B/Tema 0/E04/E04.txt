@@ -1,0 +1,27 @@
+/** 
+ * Tema00_E04
+ * Ordenación de ficheros de Strings.
+ * 
+ * @since <Fecha de hoy>    
+ * @version 1.0
+ * @author <Nombre del alumno aquí>
+ */
+
+Material necesario: archivo Ord.java
+Material a entregar: 
+	- StringsOrd.java
+	- StringsOrdTest.java
+	- FicheroStringsOrd.java
+
+Descripción del Problema
+========================
+
+En este ejercicio se trata de hacer tres cosas:
+1. Adaptar las 3 operaciones de ordenación de arrays de enteros manejadas en la Tema00_E03 para que ordenen arrays de Strings. Meter estas 3 operaciones en un archivo StringsOrd.java.
+2. Preparar pruebas para las 3 operaciones de ordenación de StringsOrd.java en el archivo StringsOrdTest.java.
+3. Resolver un problema que consiste en leer un archivo de texto formado por palabras (Strings) y escribirlas ordenadas por orden lexicográfico en un archivo de texto. Las palabras del archivo de entrada irán separadas entre ellas por espacios y/o saltos de línea. Esto se implementará en el archivo FicheroStringsOrd.java.
+ 
+Pautas
+======
+
+Para resolver el problema de 3), leeremos el archivo de palabras de texto formado por palabras (Strings), las cargaremos en un array, lo ordenaremos y las escribiremos en el archivo de salida. 
