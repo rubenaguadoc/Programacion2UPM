@@ -1,0 +1,49 @@
+/** 
+ * Tema00_E05
+ * El fraseador procaz.
+ * 
+ * @since <Fecha de hoy>    
+ * @version 1.0
+ * @author <Nombre del alumno aquí>
+ */
+
+Material necesario: 
+	- FraseadorAF.java 
+  - <ficheroDeFrases>.txt
+Material a entregar: 
+  - FraseadorAF.java (Fraseador imperativo)
+  - <ficheroDeFrases>.txt
+  - Fraseador.java + FraseadorTest.java (Fraseador OO)
+
+Objetivos
+=========
+
+- Reconvertir un programa basado en AFs en otro basado en TADs.
+- Utilizar la clase StdDraw de la librería stdlib.
+
+Descripción del Problema
+========================
+
+Se trata de desarrollar un programa que lea un fichero de frases y escriba una de ellas aleatoria cada vez que se ejecute. 
+
+El diseño del programa se da pautado. La implementación se da por completar.
+
+Pautas
+======
+
+1. Primero desarrollaremos las operaciones que aparecen especificadas 
+en FraseadorAF.java y las probaremos con un fichero <ficheroDeFrases>.txt 
+preparado por el desarrollador.
+
+2. Posteriormente, desarrollaremos la versión OO del programa. Prepararemos 
+la clase Fraseador en Fraseador.java y las pruebas en FraseadorTest.java. 
+Fraseador tiene la siguiente especificación:
+
+  Fraseador
+  - frases :  String[MAX_FRASES]
+  + Fraseador () 
+  + Fraseador (archivo : String) 
+  + longitud () : int
+  + toString () : String 
+  + fraseAleatoria () : String
+  + escribirModoGrafico (frase : String) 
