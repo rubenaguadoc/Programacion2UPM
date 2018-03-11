@@ -8,7 +8,13 @@ import java.util.Scanner;
 class Fechas{
 
   static boolean esBisiesto(int year){
-    return year % 4 == 0;
+  /*
+    return year % 4 == 0 No es correcto; 
+    Las condiciones para que un año sea bisiesto son:
+    o Año % 4 == 0 y Año % 100 != 0;
+    o Año % 400 == 0
+  */
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
   }//ENDOF: esBisiesto()
 
   static int elapsed(int day, int month, boolean bisiesto){
