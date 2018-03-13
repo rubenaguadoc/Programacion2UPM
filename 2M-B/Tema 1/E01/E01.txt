@@ -1,0 +1,61 @@
+
+Estudio y exploración de una clase.
+
+Objetivos:
+	- Explorar una clase especificada e implementada.
+	- Definir objetos de la clase.
+	- Probar una clase implementada. 
+	- Implementar una clase a partir de su especificación.
+	- Tomar una clase dada como modelo para definir otras futuras.
+	[- Comprender el mecanismo de paquetes de Java.]
+
+Material necesario: 
+	- Punto.java, PuntoPrueba.java, PuntoGrafico.java
+
+Material a desarrollar: 
+	- PuntoOps.java
+
+Descripción del Problema
+
+En esta actividad se te da especificada e implementada la clase Punto. 
+
+Se pide que hagas lo siguiente: 
+
+1. Estudia y explora la clase Punto probando una a una todas las operaciones incluídos los constructores.
+
+	Punto = (x, y : double) 
+		INV (p : Punto) = p.x>=0 and p.y>=0
+	
+	Punto
+	- x : double
+	- y : double
+	+ toString () : String 
+	+ esIgual (p : Punto) : boolean
+	+ distanciaAlOrigen () : double
+	  POST: Calcula la distancia de este Punto al origen de 
+			coordenadas medida como pasos a dar sobre las X y las Y.
+	+ x () : double
+	+ y () : double
+	+ ponerX (x : double)
+	+ ponerY (y : double)
+	+ mover (dx, dy : double)
+	  EFECTO: Mueve este punto según (dx, dy).
+	+ traslacion (dx, dy : double) : Punto
+	  POST: Crea el nuevo Punto que queda al trasladar ésta 
+			(dx, dy).
+	+ pintar ()
+	  EFECTO: Pinta este punto en el lienzo.
+	+ clon () : Punto
+	  POST: Crea un copia de este punto.
+				
+2. Desarrolla la AF PuntoOps en el archivo PuntoOps.java. Su especificación se te da a continuación. Prepara las pruebas de estas operaciones en el mismo archivo PuntoOps.java o en otro aparte PuntoOpsPrueba.java
+
+	PuntoOps 
+	+ estaEnOrigen (p : Punto) : boolean
+	  POST: Determina si el Punto <p> está en el origen de 
+		    coordenadas.
+	+ distancia (p1, p2 : Punto) : double
+	  POST: Calcula la distancia euclídea entre p1 y p2.
+
+3. Prueba todas las operaciones que se te dan para modo gráfico.
+
