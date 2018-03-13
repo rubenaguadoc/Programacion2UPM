@@ -1,0 +1,75 @@
+Estudio, exploración e implementación de clases.
+
+Objetivos:
+	- Tomar una clase dada como modelo para definir otras futuras.
+	- Explorar una clase especificada e implementada.
+	- Definir objetos de la clase.
+	- Probar una clase implementada. 
+	- Implementar una clase a partir de su especificación.
+	- Comprender el mecanismo de paquetes de Java.
+
+Material necesario: 
+	- Punto.java
+
+Material a desarrollar: 
+	- Rectangulo.java RectanguloPrueba.java
+	- RectanguloGrafico.java 
+	- RectanguloOps.java
+
+Descripción del Problema
+
+Se pide que hagas lo siguiente: 
+
+1. Implementa una clase Rectangulo:
+
+    Un rectángulo en la pantalla viene definido por su vértice noroeste 
+	(NO, de tipo Punto), su anchura (int) y su altura (int).
+    Define un rectángulo llamado r1 cuyo vértice NO (noroeste) tiene 
+	coordenadas (10, 20), anchura 40 y altura 30; define otro llamado 
+	r2 cuyo vértice NO (noroeste) tiene coordenadas (20, 40), 
+	anchura 10 y altura 50.
+
+		Rectangulo = (verticeNO : Punto; anchura : int; altura : int)
+
+2. Implementa sus operaciones:
+
+	Rectangulo
+		- verticeNO : Punto
+		- anchura : int
+		- altura : int
+		+ toString () : String
+		+ esIgual (r : Rectangulo) : boolean
+		+ distanciaAlOrigen () : double
+		  POST: Calcula la distancia de este Rectangulo al origen de 
+                coordenadas medida como pasos a dar sobre las X y 
+				las Y.
+		+ verticeNO () : Punto 
+		- anchura () : int
+		- altura () : int
+		+ ponerVerticeNO (verticeNO : Punto)
+		+ ponerAnchura (anchura : int)
+		+ ponerAltura (altura : int)
+		+ mover (dx, dy : double)
+		  EFECTO: Mueve este Rectangulo según (dx, dy).
+		+ traslacion (dx, dy : double) : Rectangulo
+		  POST: Crea el nuevo Rectangulo que queda al trasladar éste 
+				(dx, dy).
+		+ pintar ()
+		  EFECTO: Pinta este Rectangulo en el lienzo.
+		+ pintarRelleno ()
+		  EFECTO: Pinta este Rectangulo con relleno en el lienzo.
+
+3. Prepara todas las pruebas de Rectangulo en una clase llamada RectanguloPrueba.
+
+4. Implementa la clase RectanguloGrafico.java siguiendo el esquema dado en PuntoGrafico.java
+
+5. Desarrolla la AF RectanguloOps.java en el archivo RectanguloOps.java. 
+Su especificación se te da a continuación.
+
+	RectanguloOps
+		+ distancia (r1, r2 : Rectangulo) : double
+		  POST: Calcula la distancia euclídea entre los rectángulos 
+		        <r1> y <r2>.
+		+ estaEnOrigen (r : Rectangulo) : boolean
+		+ estaDentro (p : Punto; r : Rectangulo) : boolean
+		  POST: Determina si <p> está dentro o sobre el rectángulo <r>.
