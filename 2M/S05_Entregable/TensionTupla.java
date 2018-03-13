@@ -8,7 +8,7 @@
 
 class TensionTupla implements Tension{
 
-  double pBaja, pAlta;
+  private double pBaja, pAlta;
 
 
   public TensionTupla(double laBaja, double laAlta) {

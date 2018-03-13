@@ -1,0 +1,31 @@
+S6_A1_ColIndexVar  (12/3/18)
+
+
+1.- Diseñar e implementar un tipo abstracto de datos para manejar una colección indexada y acotada, pero de ocupación variable.
+La capacidad es fija (una constante), aunque puede estar ocupada pacialmente.
+
+Requerimientos:
+
++ Nombre del TAD: ColIndexVar
+- Estructura del TAD:
+  Un atributo de nombre "elementos" como un array del tipo de los elementos.
+  Un atributo de nombre "longitud" para determinar cuantos hay realmente.
+  Un atributo de nombre "MAX_ELEMENTOS" para determinar la capacidad del array.
++ Constructor.
++ Visualizador
++ Operaciones:
+  + int size()
+      POST: Resultado es el número de elementos del objeto.
+  + int get (int pos)
+      PRE: pos IN [0,size()-1]
+      POST: resultado es el elemento del objeto que esta en la posición "pos".
+  + void set (int pos, int elem)
+      PRE: pos IN [0,size()-1]
+      POST: modifica el elemento del objeto que esta en la posición "pos".
+  + void add (int pos, int elem)
+      PRE: pos IN [0,size()]
+      POST: Añade el elemento "elem" al objeto, poniéndolo en la posicion "pos".
+  + void remove (int pos)
+      PRE: pos IN [0,size()-1]
+      POST: Elimina del objeto el elemento que está en la posición "pos".
+            El objeto pasa a tener un elemento menos.
