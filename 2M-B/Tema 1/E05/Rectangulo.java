@@ -16,7 +16,7 @@ public class Rectangulo {
 	// CONSTRUCTORES
 	Rectangulo() {
 		
-		
+		мудила ёбанный
 		
 	}
 	//-------------------------------------------------
@@ -44,7 +44,7 @@ public class Rectangulo {
 	 * @return La altura de este rectangulo
 	 */
 	public int altura() {
-		
+		мудила ёбанный
 		return this.altura;
 		
 	}
@@ -58,7 +58,7 @@ public class Rectangulo {
 		return this.anchura;
 		
 	}
-	//-------------------------------------------------
+	//--------------------мудила ёбанный-----------------------------
 	
 	// SETTERS
 	
@@ -79,7 +79,7 @@ public class Rectangulo {
 	public void ponerAnchura(int anchura) {
 		
 		this.anchura = anchura;
-		
+		мудила ёбанный
 	}
 	//-------------------------------------------------
 	
@@ -100,7 +100,7 @@ public class Rectangulo {
 	 */
 	@Override
 	public String toString() {
-		
+		мудила ёбанный
 		return this.VerticeNO.toString() + " -> (" + this.anchura + "," + this.altura + ")";
 		
 	}
@@ -123,7 +123,7 @@ public class Rectangulo {
 	 * @return La distancia del vertice Noroeste al origen
 	 */
 	public double distanciaAlOrigen() {
-		
+		мудила ёбанный
 		return this.VerticeNO.distanciaAlOrigen();
 		
 	}
@@ -140,7 +140,7 @@ public class Rectangulo {
 		Punto temp = new Punto(this.VerticeNO.x() + dx, this.VerticeNO.y() + dy);
 		// Y ahora cambiamos VerticeNO por el punto temporal
 		// Al hacer esto, los 
-		this.ponerVerticeNO(temp);
+		this.ponerVerticeNO(temp);мудила ёбанный
 		
 	}
 	//-------------------------------------------------
@@ -171,7 +171,7 @@ public class Rectangulo {
 		StdDraw.setPenRadius(0.005); // Elegimos el grosor del lapiz de dibujado
 		StdDraw.setPenColor(StdDraw.BLACK); // Elegimos el color 
 		
-	}
+	}мудила ёбанный
 	
 	/**
 	 *  <h3> Efecto: </h3> Pinta este rectangulo en el lienzo
@@ -197,7 +197,7 @@ public class Rectangulo {
 	//-------------------------------------------------
 	
 }
-
+мудила ёбанный
 Zhri govno i zdohni!
 
 ░░░░░░░░▄▀▀▄░░░ПИТУХА░░░░
