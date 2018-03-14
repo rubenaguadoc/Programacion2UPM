@@ -1,0 +1,70 @@
+Estudio, exploración e implementación de clases.
+
+Objetivos:
+	- Tomar una clase dada como modelo para definir otras futuras.
+	- Explorar una clase especificada e implementada.
+	- Definir objetos de la clase.
+	- Probar una clase implementada. 
+	- Implementar una clase a partir de su especificación.
+	- Comprender el mecanismo de paquetes de Java.
+
+Material necesario: 
+	- Punto.java
+	- Circulo.java CirculoPrueba.java 
+
+Material a desarrollar: 
+	- CirculoOps.java
+	- CirculoGrafico.java 
+
+Descripción del Problema
+
+En esta actividad se te dan especificadas e implementadas las clases Punto y Circulo. 
+
+Se pide que hagas lo siguiente: 
+
+1. Estudia y explora la clase Circulo probando una a una todas las operaciones incluídos los constructores.
+
+	Circulo = (centro : Punto; radio : double)
+
+	Circulo
+		- centro : Punto
+		- radio : double
+		+ toString () : String
+		+ esIgual (c : Circulo) : boolean
+		+ distanciaAlOrigen () : double
+		  POST: Calcula la distancia de este Circulo al origen de 
+                coordenadas medida como pasos a dar sobre las X y 
+				las Y.
+		+ centro () : Punto 
+		+ radio () : double
+		+ ponerCentro (centro : Punto)
+		+ ponerRadio (radio : double)
+		+ mover (dx, dy : double)
+		  EFECTO: Mueve este circulo según (dx, dy).
+		+ traslacion (dx, dy : double) : Punto
+		  POST: Crea el nuevo Circulo que queda al trasladar éste 
+				(dx, dy).
+		+ pintar ()
+		  EFECTO: Pinta este circulo en el lienzo.
+		+ pintarRelleno ()
+		  EFECTO: Pinta este circulo con relleno en el lienzo.
+				
+2. Desarrolla la AF CirculoOps en el archivo CirculoOps.java. 
+Su especificación se te da a continuación.
+
+	CirculoOps
+		+ estaEnOrigen (c : Circulo) : boolean
+		  POST: Determina si el círculo <c> está en el origen de 
+		        coordenadas.
+		+ distancia (c1, c2 : Circulo) : double
+		  POST: Calcula la distancia euclídea entre los círculos <c1> 
+		        y <c2>.
+		+ estaDentro (p : Punto, c : Circulo) : boolean
+		  POST: Determina si p está dentro o sobre el círculo <c>.
+		+ concentricoInterior (c : Circulo; d : double) : Circulo 
+		  POST: Crea un nuevo Circulo concentrico interior a <c> a 
+			    una distancia <d>.
+   
+3. Prueba todas las operaciones que se te dan para modo gráfico.
+
+4. Implementa la clase CirculoGrafico.java siguiendo el esquema dado en PuntoGrafico.java
