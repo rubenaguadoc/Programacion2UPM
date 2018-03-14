@@ -1,0 +1,55 @@
+Clase Libro
+
+Objetivos:
+	- Especificar TADs a partir de descripciones informales.
+	- Implementar clases a partir de especificaciones.
+	- Probar clases implementadas. 
+
+Material necesario:
+Material a entregar: 
+	- Libro.java LibroPrueba.java
+
+Descripción del Problema
+
+En un programa para ayudar al encargado de una librería, se debe mantener un registro de cada libro. El registro debe llevar el nombre del autor (String), el título (String), su precio (double) y su año de publicación (int). 
+
+	Libro = (titulo : String; autor : String; precio : double; año : int)
+
+Crea instancias de este tipo para representar la siguiente información de libros:
+
+	● Daniel Defoe, Robinson Crusoe, 15€, 1999.
+	● Joseph Conrad, El Corazón de las Tinieblas, 12€, 2003.
+	● Fukushima, Japanese Cooking, 9€, 2010.
+
+Libro 
+	- titulo : String
+	- autor : String
+	- precio : double
+	- año : int
+	+ toString () : String
+	+ equals (l : Libro) : boolean
+	+ esMasBarato (l : Libro) : boolean
+	  POST: Determina si este libro es más barato que el libro <l>.
+	+ titulo () : String
+	+ autor () : String
+	+ precio () : double	
+	+ año () : int
+	+ ponerTitulo (titulo : String)
+	+ ponerPrecio (precio : double)
+	...
+
+LibroOps
+	ponerNuevoPrecio (precio : double; l : Libro)
+	POST: Pone el nuevo <precio> al Libro <l>.
+	conNuevoPrecio (precio : double; l : Libro) : Libro
+	POST: Pone el nuevo <precio> al Libro <l>.
+	masBarato (l1, l2 : Libro) : Libro
+	POST: Determina cuál de dos libros, <l1> y <l2>, es más barato.
+	porEsteAutor(Libro libro, String autor) : boolean
+	POST: Determina si el <libro> fue escrito por el <autor>.
+	esAutorContemp: determina si el libro fue escrito por un autor 
+	contemporáneo (nacido después de 1940).
+	delMismoAutor: determina si un libro fue escrito por el mismo 
+	autor que otro libro;
+	deLaMismaGeneracion: determina si dos libros fueron escritos por 
+	dos autores nacidos con menos de dos años de diferencia.
