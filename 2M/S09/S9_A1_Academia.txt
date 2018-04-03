@@ -1,0 +1,38 @@
+S9_A1_Academia  (2/4/18)
+
+
+Se quiere diseñar e implementar un tipo abstracto de datos para manejar asignaturas. Una asignatura vendrá representada por un nombre y una colección de alumnos matriculados en ella. Y de un alumno se requiere el nombre y los dos apellidos junto con las notas de un primer y un segundo parcial. Para ello fijaremos los siguientes elementos:
+
+  Alumno
+    - String nombre
+    - String apellido1
+    - String apellido2
+    - double primerParcial 
+    - double segundoParcial 
+    + Alumno (String nombre, String apellido1, String apellido2)
+    + String toString ()
+    + boolean equals (Alumno)
+    + String getNombreCompleto ()
+    + double getPrimerParcial ()
+    + double getSegundoParcial ()
+    + setPrimerParcial (double nota1)
+    + setSegundoParcial (double nota2)
+    + String clave ()
+  
+  Asignatura
+    - String nombre
+    - ListInterface<Alumno> asig
+    + Asignatura (String nombre)
+    + String getNombre()
+    + String toString () 
+    + boolean esIgual (Asignatura a)
+    + int size()
+    + Alumno get (int pos)
+    + Alumno getNotas (Alumno alumno)
+    + matricularAlumno (Alumno alumno) 
+    + eliminarAlumno (int pos)
+
+
+1.- Implementar el TAD Alumno como perteneciente a un paquete llamado "academia"
+2.- Implementar el TAD Asignatura como perteneciente a un paquete llamado "academia". Tomar como colección de Alumnos el "ListInterface".
+3.- Implementar el TAD Asignatura llevando ordenada lexicográficamente la colección.
