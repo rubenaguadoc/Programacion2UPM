@@ -1,0 +1,61 @@
+﻿S11_A1 Figuras geométricas
+
+Se quiere trabajar con figuras planas en la retícula (ZxZ). Cada figura se representará por un punto que indicará la posición de la figura en la retícula (en principio, "el centro" de la figura), y otro tipo de atributos que dependerán de la figura en sí. La figura más simple sería un Dot (un elemento de la retícula, un punto). Y otras posibles serían: el Segmento (con la longitud), el Círculo (con el radio), el Rectángulo (con la anchura y la altura), etc.
+
+Se quiere diseñar un TAD Figura que permita extender implementaciones a otro tipo de figuras como las mencionadas. Para ello se ha diseñado un TAD Punto de coordenadas planas y enteras como herramienta para abordar la representación de los puntos constitutivos de la retícula. Se advierte que la distancia al origen (método "dista0") se mide como el mínimo número de puntos que hay que recorrer para ir del punto en cuestión al origen. Y, también, que el método "mover" realiza la translación euclídea.
+
+A partir de la especificación de los distintos elementos del diseño y de la implementaciones de IPunto, IFigura, Dot y Circulo; se pide:
+1.- Implementar la extensión Cuadrilátero.
+2.- Redactar un programa que construya una colección de figuras (una lista) con tres círculos, tres dots, dos cuadriláteros y otras dos figuras sin determinar (de manera desordenada) y calcule la cadena de caracteres formada por todos los círculos de la colección.
+
+TAD Punto 
+  - int x
+  - int y 
+  + Punto (int xx, int yy) 
+  + String toString ()
+  + int getX ()
+  + int getY ()
+  + boolean equals (Punto p)
+  + int distA0 () 
+  + void mover (int dx, int dy) 
+
+TAD Figura  
+  - Punto posicion
+  + Figura (Punto pos) 
+  + String toString ()
+  + Punto getPosicion ()
+  + boolean equals (Figura f) 
+  + int distA0 ()
+  + void mover (int dx, int dy) 
+
+Dot --> Figura
+  + Dot (Punto pos) 
+  + String toString ()
+  + boolean equals (Figura f)
+  + int distA0 ()
+
+Circulo --> Figura
+  - int radio
+  + Circulo (Punto centro, int r) 
+  + String toString ()
+  + Punto getCentro ()
+  + int getRadio ()
+  + boolean equals (Figura f) 
+  + int distA0 ()
+  + int area ()
+  + int perimetro ()
+  + void mover (int dx, int dy)
+
+Rectangulo --> Figura
+  - int anchura
+  - int altura
+  + Rectangulo (Punto centro, int ancho, int alto) 
+  + String toString () 
+  + Punto getCentro ()
+  + int getAnchura()
+  + int getAltura()
+  + boolean equals (Figura f) 
+  + int distA0 ()
+  + int area ()
+  + int perimetro ()
+  + void mover (int dx, int dy)
