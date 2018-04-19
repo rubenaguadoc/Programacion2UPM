@@ -1,0 +1,29 @@
+Figuras geométricas - Herencia simple y polimorfismo.
+
+Material necesario: 
+  - Punto.java, Figura.java, Dot.java, Rectangulo.java, FiguraPruebas.java
+  - LdFigurasPrueba.java
+
+Material a desarrollar y a entregar: 
+  - LdFiguras.java
+
+1. Lista de figuras mediante un ArrayList y polimorfismo.
+
+LdFiguras
+  - ldFiguras : ArrayList<Figura>
+  + LdFiguras ()
+  + size () : int
+  + add (f : Figura)
+  + get (i : int) : Figura
+  + set (i : int, f : Figura)
+  + toString () : String
+  + equals (ldf : LdFiguras) : boolean
+  + pintar ()
+
+2. Pintar una LdFiguras en el lienzo.
+
+3. Generar figuras aleatorias mediante generaFiguras() y pintarlas en el lienzo. 
+4. Operación sobre LdFiguras:
+   + caer (dy : int) 
+
+5. Animación de figuras.
