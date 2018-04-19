@@ -1,0 +1,90 @@
+Figuras geométricas - Herencia simple.
+
+Material necesario: 
+  - Punto.java, Figura.java, Dot.java, Rectangulo.java
+  - FiguraPruebas.java
+  - Tablero.java
+
+Material a desarrollar y a entregar: 
+  - Punto.java, Figura.java, Dot.java, Rectangulo.java, Circulo.java
+
+
+1. Herencia simple con figuras geométricas. Completar los métodos que faltan.
+
+Punto 
+  - x : int
+  - y : int 
+  + Punto (x, y : int) 
+  + getX () : int
+  + getY () : int
+  + toString () : String 
+  + equals (p : Punto) : boolean
+  + distA0 () : int
+  --
+  //Desplaza el punto incrementado las abscisas en <dx> y las 
+  //ordenadas en <dy> (versión procedimiento)
+  + mover (dx, dy : int) 
+  //Desplaza el punto incrementado las abscisas en <dx> y las 
+  //ordenadas en <dy> (versión función)
+  + traslacion (dx, dy : int) : Punto
+
+Figura  
+  - posicion : Punto
+  + Figura (posicion : Punto) 
+  + getPosicion () : Punto 
+  + toString () : String
+  + equals (f : Figura) : boolean 
+  + distA0 () : int
+  --
+  + area () : int
+  + perimetro () : int
+  + pintar () 
+  + mover (dx, dy : int) 
+  + traslacion (dx, dy : int) : Figura
+
+Dot extends Figura
+  + Dot (posicion : Punto) 
+  + toString () : String
+  + equals (d : Dot) : boolean 
+  + distA0 () : int
+  --
+  + area () : int
+  + perimetro () : int
+  + pintar () 
+  + mover (dx, dy : int) 
+  + traslacion (dx, dy : int) : Dot
+
+Rectangulo extends Figura
+  - anchura : int
+  - altura : int
+  + Rectangulo (Punto centro, int anchura, int altura) 
+  + getCentro () : Punto
+  + getAnchura () : int
+  + getAltura ()  : int
+  + toString () : String
+  + equals (r : Rectangulo) : boolean 
+  + distA0 () : int
+  --
+  + area () : int
+  + perimetro () : int
+  + pintar () 
+  + mover (dx, dy : int) 
+  + traslacion (dx, dy : int) : Rectangulo
+
+Circulo extends Figura
+  - int radio
+  + Circulo (centro : Punto, radio : int) 
+  + getCentro () : Punto
+  + getRadio () : int
+  + toString () : String
+  + equals (c : Circulo) : boolean 
+  + distA0 () : int
+  + area () : int
+  + perimetro () : int
+  + pintar () 
+  + mover (dx, dy : int) 
+  + traslacion (dx, dy : int) : Circulo
+
+2. Añadir color (atributo de la clase Color) a las figuras. (opcional)
+
+3. Añadir relleno (atributo de tipo boolean) a las figuras. (opcional)
