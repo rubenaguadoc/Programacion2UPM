@@ -1,0 +1,43 @@
+﻿Figuras geométricas - Herencia simple y ArrayList.
+
+Material necesario: 
+  - Punto.java, Figura.java, PoligonoPruebas.java
+
+Material a desarrollar y a entregar: 
+  - Poligono.java
+  - PoligonoPruebas.java
+
+Un polígono será una colección de puntos de la retícula (el plano int x int)
+de manera que el primero se considerará el punto de referencia (la posición 
+de la figura). Se entenderá que los puntos siguen el orden de las agujas del 
+reloj.
+Tanto para el área como para el perímetro, se tomarán los respectivos del 
+recubrimiento reticular de la figura (el rectángulo mínimo que la contiene).
+  
+1. Implementar la clase Poligono como extensión de Figura mediante un ArrayList y polimorfismo.
+
+Poligono extends Figura
+  - vertices : ArrayList<Punto>
+  + Poligono (referencia : Punto)
+  + add (p : Punto)
+  + toString () : String
+  + equals (f : Figura) : boolean 
+  + size () : int
+  + getPosicion () : Punto 
+  + get (i : int) : Punto
+  + set (i : int, p : Punto)
+  + pintar () 
+  + distA0 () : int
+  + recubrimiento () : Poligono 
+  + area () : int
+  + perimetro () : int
+
+2. Añade todas las pruebas necesarias a PoligonoPruebas para probar todos los métodos anteriores.
+
+3. Añade los siguientes métodos a Poligono:
+  + mover (dx, dy : int) 
+  + traslacion (dx, dy : int) : Figura
+  + caer (dy : int)
+
+
+4. Animación de figuras.
