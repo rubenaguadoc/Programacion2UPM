@@ -194,4 +194,37 @@ public class Poligono extends Figura {
 	}
 	//-----------------------------
 	
+	public void mover(int dx, int dy) {
+		
+		for(int i = 0; i < vertices.size(); ++i) {
+			
+			this.get(i).mover(dx, dy);
+			
+		}
+		super.mover(dx, dy);
+		
+	}
+	//-----------------------------
+	
+	public Poligono traslacion(int dx, int dy) {
+		
+		Poligono p = new Poligono(this.get(0));
+		for(int i = 1; i < vertices.size(); ++i) {
+			
+			p.vertices.add(i, this.get(i));
+			
+		}
+		p.mover(dx, dy);
+		return p;
+		
+	}
+	//-----------------------------
+	
+	public void caer(int dy) {
+		
+		this.mover(0, dy);
+		
+	}
+	//-----------------------------
+	
 }
