@@ -1,0 +1,27 @@
+S12_A2 TAD Cola genérica (24/4/18)
+
+
+Se define el TAD Cola como una colección lineal de elementos accesible por los dos extremos, de manera que las inserciones (add) se realicen por uno y las consultas (get) y supresiones (remove) por el otro. Tomemos el ejemplo común de la "cola del cine" en la que el que llega se encola por el extremo posterior, mientras que el que se desencola es el primero del extremo anterior, lo mismo que el que es atendido.
+
+TAD Cola
+- int MAX_ELEMENTOS      // dimensión para el array "elementos"
+- int ppo                // índice anterior al primero
+- int fin                // índice al último
+- E[] elementos          // repositorio para los elementos
++ Cola (int n)           // constructor a partir de la dimensión
++ String toString ()
++ boolean estaVacia ()
++ E primero()            // Elevará "ColaVacía"
++ void encolar (E elem)  // Elevará "ColaLlena" = ArrayIndexOutOfBoundsException
++ void desencolar ()
++ int size()
+
+Se quiere especificar e implementar el TAD Cola (genérica). Para ello se deberá atender a las siguientes consideraciones:
+
+
+1.- Usar el descriptor <E> para referirse al tipo de los elementos de la Cola.
+2.- Usar el tipo Object para construir elementos genéricos.
+3.- Suprimir warnings antes del constructor de Cola con la directiva
+    @SuppressWarnings("unchecked")
+4.- Controlar las situaciones excepcionales de ColaLlena (en encolar()) y de  ColaVacia (en primero()). Atención, porque mientras que la ColaLlena se puede controlar invocando la excepción predefinida "ArrayIndexOutOfBoundsException", (la Cola siempre se llena por el final del array); la ColaVacía no, porque la Cola no siempre se vacía en un extremo del array. Habría que controlarla con una excepción particular (crear la excepción "ColaVacia").
+5.-Crear la excepción "MemoriaExcesiva" para controlar que no se puedan construir Colas de mayor dimensión que la que permita MAX_ELEMENTOS.

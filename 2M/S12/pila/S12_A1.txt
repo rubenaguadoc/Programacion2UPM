@@ -1,0 +1,26 @@
+S12_A1 Pila  (23/4/18)
+
+
+Se define el TAD Pila como una colección lineal de elementos donde solo se tiene acceso a un único extremo, de tal manera que las consultas (get) o supresiones (remove) afectarán al primer elemento (el único visible) y las inserciones (add) alojarán al elemento insertado como primero. Tomemos el ejemplo común de la "pila de platos" que tiene una base (inaccesible), una cima (con el único plato accesible) y en la que puedo apilar un nuevo plato (sobre la cima) o desapilar (retirar el plato de la cima).
+
+TAD Pila
+- int MAX_ELEMENTOS     // dimensión para el array "elementos"
+- int longitud          // tamaño de la pila
+- E[] elementos         // repositorio para los elementos
++ Pila (int n)          // Constructor a partir de la dimensión
++ String toString ()
++ boolean estaVacia ()
++ int cima()
++ void apilar (int elem)
++ void desapilar ()
++ int size()
+
+Se quiere especificar e implementar el TAD Pila (genérica). Para ello se deberá atender a las siguientes consideraciones:
+
+1.- Usar el descriptor <E> para referirse al tipo de los elementos de la Pila.
+2.- Usar el tipo Object para construir elementos genéricos.
+3.- Suprimir warnings antes del constructor de Pila con la directiva
+    @SuppressWarnings("unchecked")
+4.- Controlar las situaciones excepcionales de Pila_Llena y Pila_Vacia en los métodos que surjan. Utilizar la excepción predefinida "ArrayIndexOutOfBoundsException".
+5.-Crear la excepción "MemoriaExcesiva" para controlar que no se puedan construir Pilas de mayor dimensión que el que permita MAX_ELEMENTOS.
+
